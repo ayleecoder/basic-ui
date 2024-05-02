@@ -12,7 +12,7 @@ body {
 .visual,
 .main,
 .slogan,
-.footer {
+.footer-inner {
   width: var(--container-size, 940px);
   margin: 0 auto;
 }
@@ -20,21 +20,39 @@ body {
 /* 헤더 */
 .header {
   background-color: yellow;
+  height: 10vh;
 }
 
 /* 비주얼 */
 .visual {
   background-color: pink;
+  height: 10vh;
 }
 /* 메인 */
 .main {
   background-color: skyblue;
+  height: 60vh;
+  display: flex; /* 이제 메인은 flex 컨테이너가 됨*/
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch; /*컨텐츠 크기에 따라 auto가 조정됨*/
 }
+
+.group {
+  border: 1px solid red;
+}
+
 /* 슬로건 */
 .slogan {
   background-color: lime;
+  height: 10vh;
 }
 /* 푸터 */
 .footer {
   background-color: orange;
+}
+
+.footer-inner {
+  background-color: yellow;
+  height: 10vh;
 }
