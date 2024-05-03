@@ -34,12 +34,25 @@ body {
   height: 60vh;
   display: flex; /* 이제 메인은 flex 컨테이너가 됨*/
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch; /*컨텐츠 크기에 따라 auto가 조정됨*/
+  padding: 28px 16px 36px;
+  justify-content: space-between;
+  min-height: 450px;
 }
 
 .group {
   border: 1px solid red;
+}
+
+.group1 {
+  width: 250px;
+}
+
+.group2 {
+  width: 380px;
+}
+
+.group3 {
+  width: 190px;
 }
 
 /* 슬로건 */
