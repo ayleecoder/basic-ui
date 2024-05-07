@@ -19,8 +19,19 @@ body {
 
 /* 헤더 */
 .header {
-  background-color: yellow;
-  height: 10vh;
+  background-color: darkblue;
+  height: 120px;
+  padding: 0 50px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+/* 로고 */
+.logo {
+  background-color: orange;
+  position: absolute;
+  top: 45px;
+  left: 60px;
 }
 
 /* 비주얼 */
@@ -28,30 +39,35 @@ body {
   background-color: pink;
   height: 10vh;
 }
-/* 메인 */
+/* 메인 콘텐츠 */
 .main {
   background-color: skyblue;
-  height: 60vh;
-  display: flex; /* 이제 메인은 flex 컨테이너가 됨*/
-  flex-flow: row nowrap;
-  padding: 28px 16px 36px;
-  justify-content: space-between;
+  display: flow-root;
   min-height: 450px;
+  padding: 28px 16px 36px;
 }
 
 .group {
   border: 1px solid red;
+  float: left;
+}
+
+.group:nth-child(n + 2) {
+  margin-left: 44px;
 }
 
 .group1 {
   width: 250px;
+  background-color: orange;
 }
 
 .group2 {
   width: 380px;
+  background: silver;
 }
 
 .group3 {
+  background: hotpink;
   width: 190px;
 }
 
@@ -59,6 +75,7 @@ body {
 .slogan {
   background-color: lime;
   height: 10vh;
+  clear: both;
 }
 /* 푸터 */
 .footer {
@@ -66,6 +83,26 @@ body {
 }
 
 .footer-inner {
-  background-color: yellow;
+  background: yellow;
   height: 10vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+
+@supports (display: flex) {
+  .main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .group:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .group3 {
+    order: -1;
+  }
 }
