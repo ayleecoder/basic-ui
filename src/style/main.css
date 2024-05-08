@@ -16,6 +16,7 @@ body {
     linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
+  margin: 0;
 }
 
 .header,
@@ -45,23 +46,43 @@ body {
 }
 
 /* 비주얼 */
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+    margin: 0;
+  }
+  100% {
+    font-size: 24px;
+    margin: 75px 0 0 400px;
+  }
+}
+
+.visual-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  background: lime;
+}
+
 .visual {
   height: 120px;
   block-size: 120px;
   position: relative;
-}
+  border: 1px solid transparent;
 
-.visual::before,
-.visual::after {
-  content: '';
-  width: inherit;
-  inline-size: inherit;
-  height: inherit;
-  block-size: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
+  &::before,
+  &::after {
+    content: '';
+    width: inherit;
+    inline-size: inherit;
+    height: inherit;
+    block-size: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .visual::before {
