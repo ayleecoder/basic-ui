@@ -2,13 +2,13 @@
 
 ### CSS 학습 주제
 
-- [] 텍스트 및 글꼴
-- [] 박스모델과 box-sizing
+- [x] 텍스트 및 글꼴
+- [x] 박스모델과 box-sizing
 - [] 선택자 (Selector)
-- [] 캐스케이드 (Cascading)
-- [] 상속 (Inheritance)
-- [] 사이즈 단위 (Units)
-- [] Block VS Inline
+- [x] 캐스케이드 (Cascading)
+- [x] 상속 (Inheritance)
+- [x] 사이즈 단위 (Units)
+- [x] Block VS Inline
 - [] Float
 - [] Position
 - [] Flex
