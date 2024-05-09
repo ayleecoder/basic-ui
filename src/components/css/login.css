@@ -1,24 +1,86 @@
 @import url(/style/theme.css);
 
 /* 기본 글꼴 */
-:root{
-  --base-font-family: "SUIT Variable", sans-serif; 
+:root {
+  --base-font-family: 'SUIT Variable', sans-serif;
 }
 
-body{
+body {
   font-family: var(--base-font-family);
 }
 
-
 /* 로그인 */
-.login{
+.login {
+  width: 500px;
 
   --box-start-color: var(--orange-100);
   --box-end-color: var(--orange-200);
   --box-shadow-color: var(--gray-700);
 
-  background-image: radial-gradient(circle at right top, var(--box-start-color,), var(--box-end-color));
+  background-image: radial-gradient(
+    circle at right top,
+    var(--box-start-color),
+    var(--box-end-color)
+  );
   border-radius: 5px;
-  padding: 10px;
+  padding: 12px;
   box-shadow: 5px 5px 0 0 var(--box-shadow-color);
+}
+
+.login-title {
+  --color: var(--yellow);
+
+  color: var(--color);
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.login-form {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 50px;
+  }
+
+  div {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+  label {
+    display: inline-block;
+    width: 4em;
+  }
+
+  input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    width: calc(100%-145px);
+    inline-size: calc(100%-45px);
+  }
+}
+
+.login-button {
+  border: 0;
+  padding: 16px 10px;
+  background-color: var(--orange-200);
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.member-sign {
+  background-color: white;
+  margin: 0;
+  list-style: none;
+  padding: 10px 10px;
+  border-radius: 0 0 5px 5px;
 }
