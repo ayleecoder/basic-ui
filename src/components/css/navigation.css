@@ -3,34 +3,61 @@
 @import url(/style/base.css);
 
 body {
-  margin: 50px;
+  margin: 60px;
 }
 
 .menu {
   background: linear-gradient(to bottom, orange, orangered, orange);
-  box-shadow: 2px 2px 0 #00081818;
+  box-shadow: 0 -5px 0 0 #121212;
   color: #000;
   display: flow-root; /*display 안주면 자식요소의 높이를 인식하지 못하고 bfc를 형성하지 못함*/
   padding-left: 225px;
 
   > li {
     float: left;
-    border-left: 2px solid #fff;
+    border-left: 2px solid#fff;
+  }
+
+  .is--active {
+    button {
+      color : yellow;
+      
+
+      &::after{
+        content: "";
+        background:#000;
+        display: block;
+        height: 1px;
+        /* border-top: 5px solid #000; */
+      }
+
+    }
+
+    ul{
+      /* display: block; */
+    }
   }
 
   button {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0 24px;
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     background: transparent;
     border: 0;
     color: #fff;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+
+    span {
+      display: block;
+      padding: 0 24px;
+    }
   }
 
   ul {
     display: none;
+    position: absolute;
+    
   }
 }
