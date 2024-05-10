@@ -1,0 +1,36 @@
+@import url(/style/reset.css);
+@import url(/style/theme.css);
+@import url(/style/base.css);
+
+body {
+  margin: 50px;
+}
+
+.menu {
+  background: linear-gradient(to bottom, orange, orangered, orange);
+  box-shadow: 2px 2px 0 #00081818;
+  color: #000;
+  display: flow-root; /*display 안주면 자식요소의 높이를 인식하지 못하고 bfc를 형성하지 못함*/
+  padding-left: 225px;
+
+  > li {
+    float: left;
+    border-left: 2px solid #fff;
+  }
+
+  button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 24px;
+    height: 50px;
+    line-height: 50px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  }
+
+  ul {
+    display: none;
+  }
+}
