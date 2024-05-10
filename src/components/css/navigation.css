@@ -17,6 +17,16 @@ body {
     float: left;
     border-left: 2px solid#fff;
     position: relative;
+
+
+  }
+
+
+  > li:nth-child(-n+3) ul{
+    left: 0;
+  }
+  > li:nth-child(n+4) ul{
+    right: 0;
   }
 
   .is--active {
@@ -35,7 +45,7 @@ body {
     }
 
     ul{
-      display: block;
+      display: flex;
     }
   }
 
@@ -59,14 +69,22 @@ body {
   ul {
     display: none;
     position: absolute;
-    background-color: pink;
+    
     top: 65px;
     left: 0;
-    white-space: nowrap;
-
     
     li{
+      white-space: nowrap;
       display: inline-block;
+      margin-right: 4px;
     }
-  }
+    a{
+      display: flex;
+      padding: 8px;
+      gap: 8px;
+      
+      }
+    }
+
+    
 }
