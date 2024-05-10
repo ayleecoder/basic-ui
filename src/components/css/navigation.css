@@ -16,6 +16,7 @@ body {
   > li {
     float: left;
     border-left: 2px solid#fff;
+    position: relative;
   }
 
   .is--active {
@@ -34,7 +35,7 @@ body {
     }
 
     ul{
-      /* display: block; */
+      display: block;
     }
   }
 
@@ -51,13 +52,21 @@ body {
 
     span {
       display: block;
-      padding: 0 24px;
+      
     }
   }
 
   ul {
     display: none;
     position: absolute;
+    background-color: pink;
+    top: 65px;
+    left: 0;
+    white-space: nowrap;
+
     
+    li{
+      display: inline-block;
+    }
   }
 }
