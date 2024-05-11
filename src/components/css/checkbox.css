@@ -17,7 +17,7 @@ body, h1{
   }
   label {
     background: url(/components/images/un-check.svg)  no-repeat 0 0 / contain;
-   
+
     padding-left: 25px; 
   }
 
@@ -32,4 +32,10 @@ body, h1{
   input::focus-visible{
     outline: 2px solid red;
   }
+}
+
+.tooltip{
+  background: yellow;
+
+  
 }
