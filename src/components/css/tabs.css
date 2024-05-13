@@ -1,3 +1,73 @@
 @import url(/style/reset.css);
 @import url(/style/theme.css);
 @import url(/style/base.css);
+
+/* 탭 컴포넌트 */
+
+body,
+h1 {
+  margin: 1.25rem;
+}
+.tabs {
+  width: 50%;
+  position: relative;
+}
+
+.tab {
+  border: 1px solid grey;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  color: gray;
+  background-color: #fff;
+
+  &.is-selected {
+    background-color: #fff;
+    border-color: orangered orangered white orangered;
+    color: orangered;
+  }
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  display: none;
+  padding-top: 1.5rem;
+
+  &.is-selected {
+    display: flex;
+  }
+
+  .tab-panel-item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    a {
+      /* display: flex; */
+      /* flex-flow: row nowrap;
+      gap: 0.5rem; */
+
+      flex: 1 1 auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    span {
+      flex: 0 0 auto;
+    }
+  }
+
+  .tab-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
