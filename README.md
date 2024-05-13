@@ -22,13 +22,13 @@
 - [x] 애니메이션 (Animation)
 - [] 화면전환(Transition)
 - [] 필터와 혼합모드
-- [] 목록
+- [x] 목록
 - [x] 숨김 콘텐츠 (Screen Reader Only)
 - [] 포커스 스타일링 (:focus-visible, :focus-widthin)
 - [x] 변수 (Custom Properties)
 - [x] 중첩 (Nesting)
-- [] 오버플로우
-- [] 반응형 iframe(aspect-ratio)
+- [x] 오버플로우
+- [x] 반응형 iframe(aspect-ratio)
 - [] 스프라이트(Sprite) 배경이미지
 - [] SVG 스프라이트
 - [] 다크 모드 (prefer-color-scheme)
