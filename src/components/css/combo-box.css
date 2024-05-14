@@ -1,0 +1,15 @@
+
+body{
+  margin: 0;
+}
+.combo-box{
+  border: 1px solid red;
+  padding: 0.5rem;
+  
+  select{
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    width: 100px;
+  }
+}
